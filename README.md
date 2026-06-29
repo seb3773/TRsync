@@ -1,8 +1,10 @@
 # TRsync
 
+![TRsync](./konqi_sync.png)
+
 **TRsync** is a native TQt3 port of [Grsync](http://www.opbyte.it/grsync/), designed for the **Trinity Desktop Environment (TDE)**. It provides a lightweight, premium, and feature-rich graphical user interface for `rsync`, the powerful command-line directory and file synchronization tool.
 
-This project is based on the original **GRsync (c) Piero Orsoni and others**, ported and enhanced by **seb3773** (https://github.com/seb3773).
+This project is based on the original **GRsync (c) Piero Orsoni and others**, ported to tqt3 and enhanced.
 
 ---
 
