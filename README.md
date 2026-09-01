@@ -69,9 +69,8 @@ The compiled executable `trsync` will be created in `build/`.
 
 ---
 
-## Packaging
-
-To generate a standard Debian package (`.deb`), run the packaging script:
+### Debian Package (.deb)
+To generate a standard Debian package (`.deb`), run:
 ```bash
 ./build_deb.sh
 ```
@@ -82,6 +81,13 @@ This script automatically:
 * Generates a modern desktop launcher (`trsync.desktop`) and registers the system launcher category.
 * Configures application icons and creates standard system resolution links (from 16x16 up to 64x64).
 * Produces a packaged archive named `trsync_1.3.1_<architecture>.deb` in the current directory, ready for installation.
+
+### Q4OS 1-Click Installer (.qsi)
+To build a standalone Q4OS 1-Click Installer package (`.qsi`), run:
+```bash
+./build_qsi.sh
+```
+This script automatically builds/locates the Debian package and wraps it into a self-contained GUI installer wizard `setup_trsync_1.3.1.qsi` with native Trinity Desktop Environment setup hooks.
 
 ---
 

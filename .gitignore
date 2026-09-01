@@ -1,3 +1,7 @@
 build/
 test_dir/
 *.deb
+*.qsi
+qsi_setup/deb_packages/
+qsi_setup/output/
+qsi_setup/qinstaller
