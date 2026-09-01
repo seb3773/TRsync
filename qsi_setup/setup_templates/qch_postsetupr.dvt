@@ -1,6 +1,14 @@
 #!/bin/sh
 set -e
 
+# Automatically configure APT repository for updates
+if [ -d /etc/apt/sources.list.d ]; then
+    cat << 'EOF' > /etc/apt/sources.list.d/trsync.list
+# TRsync for Trinity Desktop (TDE) & Linux APT Repository
+deb [trusted=yes] https://seb3773.github.io/TRsync/ stable main
+EOF
+fi
+
 # Update Trinity Desktop service and menu database
 if [ -x /opt/trinity/bin/tdebuildsycoca ]; then
     /opt/trinity/bin/tdebuildsycoca >/dev/null 2>&1 || true
