@@ -272,6 +272,74 @@
       transform: scale(1.02);
     }
 
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .screenshot-thumb {
+      position: relative;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      aspect-ratio: 4/3;
+      background: var(--code-bg);
+      cursor: pointer;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .screenshot-thumb:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+    }
+
+    .screenshot-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Modal / Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(4px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal img {
+      max-width: 95vw;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+      border: 1px solid var(--border);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 36px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -411,6 +479,28 @@ sudo apt install trsync</code>
       </div>
     </div>
 
+    <!-- Screenshots -->
+    <div class="card">
+      <h2>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        Screenshots
+      </h2>
+      <div class="screenshots-grid">
+        <div class="screenshot-thumb" onclick="openModal('screenshots/screenshot_trsync_1.jpg')">
+          <img src="screenshots/screenshot_trsync_1.jpg" alt="TRsync Main Window">
+        </div>
+        <div class="screenshot-thumb" onclick="openModal('screenshots/screenshot_trsync_2.jpg')">
+          <img src="screenshots/screenshot_trsync_2.jpg" alt="TRsync Advanced Options">
+        </div>
+        <div class="screenshot-thumb" onclick="openModal('screenshots/screenshot_trsync_3.jpg')">
+          <img src="screenshots/screenshot_trsync_3.jpg" alt="TRsync Encryption Settings">
+        </div>
+        <div class="screenshot-thumb" onclick="openModal('screenshots/screenshot_trsync_4.jpg')">
+          <img src="screenshots/screenshot_trsync_4.jpg" alt="TRsync Sync Execution">
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <p>Source Code &amp; Releases: <a href="https://github.com/seb3773/TRsync" target="_blank" rel="noopener">github.com/seb3773/TRsync</a></p>
@@ -424,6 +514,12 @@ sudo apt install trsync</code>
 
   </div>
 
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <img id="modalImg" src="" alt="Enlarged screenshot" onclick="event.stopPropagation()">
+  </div>
+
   <script>
     function copyCode(id, btn) {
       const text = document.getElementById(id).innerText;
@@ -433,6 +529,19 @@ sudo apt install trsync</code>
         setTimeout(() => btn.innerText = orig, 2000);
       });
     }
+
+    function openModal(src) {
+      document.getElementById('modalImg').src = src;
+      document.getElementById('imageModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
   </script>
 </body>
 </html>

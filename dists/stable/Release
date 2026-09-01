@@ -1,24 +1,24 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Tue, 01 Sep 2026 20:04:43 +0000
+Date: Tue, 01 Sep 2026 21:15:13 +0000
 Description: APT Repository for TRsync (Trinity Desktop & Linux)
 Label: TRsync APT Repository
 Origin: TRsync
 Suite: stable
 MD5Sum:
- 4ee9cdcf6c3215f53ea27d42b3c937bb              216 Release
- a5f1f72918123721db922c2dc3af0841              717 main/binary-amd64/Packages
- fcb6fba090873cbb6b24ed40188f609e              506 main/binary-amd64/Packages.gz
+ 2564cb857061417d60585cf4bef88f61              216 Release
+ d6593e31210439198e877bfeeaad3a51              717 main/binary-amd64/Packages
+ fcf06c177cbc3830bb93f12adf63916f              509 main/binary-amd64/Packages.gz
 SHA1:
- b723db1f027c157d37b010b59bf9bd765e8997a0              216 Release
- 1efc9f8cdabffc6a50a0596670302d928832031c              717 main/binary-amd64/Packages
- d07e1967dee9e4f682630649d546431e8691d566              506 main/binary-amd64/Packages.gz
+ 939978ef03d854e981e769d98cd5f19afa0a4cdb              216 Release
+ 8a3cb168933a642ee258c866f21be3e59759055d              717 main/binary-amd64/Packages
+ 32b96b3ce3d635c9b95f9b440b32cdb1c663d1c3              509 main/binary-amd64/Packages.gz
 SHA256:
- a9570140af2d2a57bb20a975b78e8f7349609ff77c3b65babf7cc44598b9a9db              216 Release
- c6264695bcb7b79b85f19a8d533b4bad5ecc58ce2cb263ddfc9001a7e178a5b2              717 main/binary-amd64/Packages
- ec19170d5bba743203d427a676c51397c47f2e90ea612f7db50eb6944ec94e03              506 main/binary-amd64/Packages.gz
+ 484b7d8b4ca5650a813ee60ea3c2979553c58d58a213782b45ca1052856da5d7              216 Release
+ 1ea95f3b4e523e2c04e46c48c3850ced24cc18a149a9f4ee95a594574ad5af6d              717 main/binary-amd64/Packages
+ b48a3b2fe1b820f37e8cd33c0498a9b0539d78c34d63f327b5e7f54f6e05b6e1              509 main/binary-amd64/Packages.gz
 SHA512:
- 9dc2fcf2cfe354eb65092f1ff72289321ba3d9ead2a8fb486563854740178308a2b028bfe7473bb1006464dd83b36006874effd362538e30277d2a335076313f              216 Release
- 93ed8844cddd4022a13e158209f4be0b7b69bdc1ca19ea00c2ca3ed9c99becdd70a85a29a5bd1d308ec61ee10935184f2c3e3a8c93a227bf7f13356bba1c6040              717 main/binary-amd64/Packages
- 9dd0632eff28f1fe61892c6506aa09a9050b2f62572531bf5ac9ef702aaad5adaa465767bc07a52d9b040f8ea1443e3c48602dff81881b917fc7ded1fe3068df              506 main/binary-amd64/Packages.gz
+ 008ef2330544f318d2f79dff46f03199f647f75589aaa7fdc8b5109893029d2ade56113dc9599b119c12368bc6f62332884403ff020959d8eb0919cdddc9abf5              216 Release
+ b4621c6fa91784f4704b499ee59d516476dffd5f2edbc25b427aa55fae22659a5f3b210d8b0dc9bd0d0eb705555a16f2b53797741cc602ce660a86fc2bec6767              717 main/binary-amd64/Packages
+ 6329bbf11fcf37d64136e1ef672b6542a6ebef74b68eaf6bac7ed350d0441a86753cb2a147adb96c3e753725cf34cd6f028aed09915ab0bc5e39ec425cd96b6d              509 main/binary-amd64/Packages.gz

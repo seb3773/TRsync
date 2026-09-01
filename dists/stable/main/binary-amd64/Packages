@@ -6,10 +6,10 @@ Installed-Size: 256
 Depends: libtqt3-mt-trinity (>= 4:14.0.0) | libtqt3-mt, rsync
 Recommends: encfs, gocryptfs
 Filename: pool/main/t/trsync/trsync_1.3.1_amd64.deb
-Size: 69664
-MD5sum: c0337ef4fbde705cf596e700cca547c1
-SHA1: b5a8ead5424b49f2e9cc14f346efa1542331e819
-SHA256: ce75af7e97092f67d84e318072ef0d2901520d620312226f499c9580473bd6d4
+Size: 69580
+MD5sum: b965c54e83112bfda7132417d92321b4
+SHA1: 4432a290131990fb650b2d659c8cd36d1de6690c
+SHA256: 67d613d24ddb4b0edb40463467fde8809bc8788be9cd88b5bf146261d78fd707
 Section: utils
 Priority: optional
 Description: Synchronize files and folders with FUSE client-side encryption
