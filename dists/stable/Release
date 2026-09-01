@@ -1,0 +1,24 @@
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Tue, 01 Sep 2026 20:04:43 +0000
+Description: APT Repository for TRsync (Trinity Desktop & Linux)
+Label: TRsync APT Repository
+Origin: TRsync
+Suite: stable
+MD5Sum:
+ 4ee9cdcf6c3215f53ea27d42b3c937bb              216 Release
+ a5f1f72918123721db922c2dc3af0841              717 main/binary-amd64/Packages
+ fcb6fba090873cbb6b24ed40188f609e              506 main/binary-amd64/Packages.gz
+SHA1:
+ b723db1f027c157d37b010b59bf9bd765e8997a0              216 Release
+ 1efc9f8cdabffc6a50a0596670302d928832031c              717 main/binary-amd64/Packages
+ d07e1967dee9e4f682630649d546431e8691d566              506 main/binary-amd64/Packages.gz
+SHA256:
+ a9570140af2d2a57bb20a975b78e8f7349609ff77c3b65babf7cc44598b9a9db              216 Release
+ c6264695bcb7b79b85f19a8d533b4bad5ecc58ce2cb263ddfc9001a7e178a5b2              717 main/binary-amd64/Packages
+ ec19170d5bba743203d427a676c51397c47f2e90ea612f7db50eb6944ec94e03              506 main/binary-amd64/Packages.gz
+SHA512:
+ 9dc2fcf2cfe354eb65092f1ff72289321ba3d9ead2a8fb486563854740178308a2b028bfe7473bb1006464dd83b36006874effd362538e30277d2a335076313f              216 Release
+ 93ed8844cddd4022a13e158209f4be0b7b69bdc1ca19ea00c2ca3ed9c99becdd70a85a29a5bd1d308ec61ee10935184f2c3e3a8c93a227bf7f13356bba1c6040              717 main/binary-amd64/Packages
+ 9dd0632eff28f1fe61892c6506aa09a9050b2f62572531bf5ac9ef702aaad5adaa465767bc07a52d9b040f8ea1443e3c48602dff81881b917fc7ded1fe3068df              506 main/binary-amd64/Packages.gz
