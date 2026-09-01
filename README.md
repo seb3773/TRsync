@@ -91,5 +91,14 @@ This script automatically builds/locates the Debian package and wraps it into a 
 
 ---
 
+## Screenshots
+
+| | |
+| :---: | :---: |
+| <a href="screenshots/screenshot_trsync_1.jpg"><img src="screenshots/screenshot_trsync_1.jpg" width="380" alt="TRsync Main Window"></a> | <a href="screenshots/screenshot_trsync_2.jpg"><img src="screenshots/screenshot_trsync_2.jpg" width="380" alt="TRsync Advanced Settings"></a> |
+| <a href="screenshots/screenshot_trsync_3.jpg"><img src="screenshots/screenshot_trsync_3.jpg" width="380" alt="TRsync Client-Side Encryption"></a> | <a href="screenshots/screenshot_trsync_4.jpg"><img src="screenshots/screenshot_trsync_4.jpg" width="380" alt="TRsync Execution &amp; Progress"></a> |
+
+---
+
 ## License
 TRsync is open source and released under the **GNU GPL License**. See the `COPYING` file at the root of the project for license details.
